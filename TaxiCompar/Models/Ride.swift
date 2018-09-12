@@ -70,7 +70,7 @@ class Ride: NSObject {
             "from": fromLocation?.address ?? "",
             "to": toLocation?.address ?? "",
             "number_seat": seatCount,
-            "user_id": user?.id ?? "PASIDPASCHOCOLAT"
+            "user_id": getUniqueID() ?? "unknown_id"
         ]
     }
     

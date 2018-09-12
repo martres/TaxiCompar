@@ -10,16 +10,16 @@ import Foundation
 
 class Coordinates {
     
-    var lat: Float = -1
-    var long: Float = -1
+    var lat: Double = -1
+    var long: Double = -1
     
-    init(lat: Float, long: Float) {
+    init(lat: Double, long: Double) {
         self.lat = lat
         self.long = long
     }
     
     init(dictionnary: [String: Any]) {
-        lat = dictionnary["lat"] as? Float ?? -1
-        long = dictionnary["long"] as? Float ?? -1
+        lat = dictionnary["lat"] as? Double ?? -1
+        long = dictionnary["long"] as? Double ?? -1
     }
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchAdressCell" customModule="TaxiCompar" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-k2-E5T">
+                    <rect key="frame" x="30" y="0.0" width="339" height="50"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="street-address"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vbE-r8-WeE">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="MwQ-Xr-GW3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zMa-k2-E5T" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IZq-V2-fRL"/>
+                <constraint firstItem="zMa-k2-E5T" firstAttribute="leading" secondItem="vbE-r8-WeE" secondAttribute="trailing" id="MO0-wl-7Sd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zMa-k2-E5T" secondAttribute="bottom" id="Oax-sV-EoT"/>
+                <constraint firstItem="vbE-r8-WeE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QQ3-wb-PRt"/>
+                <constraint firstAttribute="bottom" secondItem="vbE-r8-WeE" secondAttribute="bottom" id="Zpe-8n-tqQ"/>
+                <constraint firstItem="vbE-r8-WeE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="voX-BI-HiR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zMa-k2-E5T" secondAttribute="trailing" constant="6" id="xkO-0b-bUP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </view>
+    </objects>
+</document>

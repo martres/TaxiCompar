@@ -60,6 +60,6 @@ class ApiManager: NSObject {
             ride.setup(dictionnary: data)
             completion(ride)
         }
-        
+        uberManager?.send(request: request)
     }
 }

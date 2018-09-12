@@ -45,9 +45,6 @@ final class RequestManager: NSObject {
                           parameters: currentRequest.parameters,
                           encoding: JSONEncoding.default,
                           headers: basicHeaders())
-            .responseString(completionHandler: { (response) in
-                print(response)
-            })
             .responseJSON { response in
                 guard response.result.error == nil else {
                     currentRequest.error = response.result.error
